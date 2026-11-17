@@ -17,7 +17,7 @@ def main() -> int:
     class Window(QMainWindow):
         def __init__(self):
             super().__init__()
-            self.setWindowTitle("RTMT Plus — Log Search MVP")
+            self.setWindowTitle("RTMT Plus — Log Search Foundation")
             self.resize(1050, 700)
             self.folder = ""
             center = QWidget()
