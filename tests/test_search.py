@@ -41,3 +41,27 @@ def test_empty_query(tmp_path):
 def test_skip_unrelated_extensions(tmp_path):
     (tmp_path / "secret.env").write_text("error")
     assert list(search([tmp_path], "error")) == []
+
+def test_reject_unsafe_regex(tmp_path):
+    with pytest.raises(ValueError, match="unsafe"):
+        list(search([tmp_path], "(a+)+$", regex=True))
+
+def test_reject_oversized_query(tmp_path):
+    with pytest.raises(ValueError, match="too long"):
+        list(search([tmp_path], "x" * 513))
+
+def test_reject_oversized_line(tmp_path):
+    log = tmp_path / "huge.log"
+    log.write_text("x" * 1_000_002)
+    with pytest.raises(ValueError, match="Line too long"):
+        list(search([log], "x"))
+
+def test_reject_inverted_time_window(tmp_path):
+    with pytest.raises(ValueError, match="Start time"):
+        list(search([tmp_path], "x", since=datetime(2026, 11, 18), until=datetime(2026, 11, 17)))
+
+def test_csv_formula_escaping():
+    from rtmt_plus.cli import safe_csv
+    assert safe_csv("=HYPERLINK(1)") == "'=HYPERLINK(1)"
+    assert safe_csv(" @SUM(1)") == "' @SUM(1)"
+    assert safe_csv("ordinary") == "ordinary"
