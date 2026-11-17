@@ -20,7 +20,7 @@ RTMT Plus is a standalone, local-first desktop companion to Cisco Real-Time Moni
 
 ## Roadmap
 
-### Phase 1 — Search MVP
+### Phase 1 — Search Foundation
 Desktop UI, file import, indexing, regex search, time filters, and CSV/JSON export.
 
 ### Phase 2 — Correlation
