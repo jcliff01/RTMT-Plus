@@ -1,0 +1,49 @@
+name: Build Windows EXE
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'pyproject.toml'
+      - '.github/workflows/windows-exe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install application and packaging tools
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[desktop,dev]"
+          python -m pip install "pyinstaller>=6.11,<7"
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Build Windows executable
+        shell: pwsh
+        run: |
+          python -m PyInstaller --noconfirm --clean --onefile --windowed --name RTMT-Plus --collect-all PySide6 src/rtmt_plus/desktop_launcher.py
+      - name: Verify executable exists
+        shell: pwsh
+        run: |
+          if (!(Test-Path dist/RTMT-Plus.exe)) { throw "Executable missing" }
+          Get-Item dist/RTMT-Plus.exe | Select-Object Name,Length
+      - name: Upload Windows EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: RTMT-Plus-Windows-x64
+          path: dist/RTMT-Plus.exe
+          if-no-files-found: error
+          retention-days: 30
