@@ -8,6 +8,13 @@ import sys
 
 from .search import search
 
+def safe_csv(value: object) -> object:
+    """Prevent spreadsheet formula interpretation for untrusted log fields."""
+    if isinstance(value, str) and value.lstrip().startswith(("=", "+", "-", "@")):
+        return "'" + value
+    return value
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Search local CUCM/RTMT log files")
     parser.add_argument("paths", nargs="+", help="Files or folders to search")
@@ -28,7 +35,7 @@ def main(argv: list[str] | None = None) -> int:
             writer = csv.DictWriter(sys.stdout, fieldnames=["path", "line", "timestamp", "call_id", "text"])
             writer.writeheader()
             for match in matches:
-                writer.writerow(match.to_dict())
+                writer.writerow({key: safe_csv(value) for key, value in match.to_dict().items()})
         else:
             for match in matches:
                 if args.format == "jsonl":
