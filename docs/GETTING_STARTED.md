@@ -40,7 +40,7 @@ python -m pytest
 
 ## Current limitations
 
-- This is an early MVP, not a Cisco RTMT plugin.
+- This is an initial release, not a Cisco RTMT plugin.
 - Search is streaming, not yet indexed; very large folders may be slow.
 - Timestamp parsing recognizes generic ISO-style dates only.
 - Call-ID matching is heuristic and format-dependent.
