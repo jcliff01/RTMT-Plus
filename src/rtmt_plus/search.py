@@ -15,6 +15,12 @@ TIMESTAMP = re.compile(
 )
 CALL_ID = re.compile(r"(?i)\b(?:call[-_ ]?id|globalcallid|callidentifier)\s*[:=]\s*([\w.@-]+)")
 SUPPORTED_SUFFIXES = (".log", ".txt", ".trace", ".out", ".gz")
+MAX_LINE_CHARS = 1_000_000
+MAX_QUERY_CHARS = 512
+MAX_GZIP_BYTES = 512 * 1024 * 1024
+# Reject common catastrophic backtracking constructs; this is a conservative guard,
+# not a complete regex sandbox. Only run trusted patterns against sensitive logs.
+UNSAFE_REGEX = re.compile(r"\([^)]*[+*][^)]*\)[+*{]|\([^)]*\|[^)]*\)[+*{]")
 
 @dataclass(frozen=True)
 class Match:
@@ -75,6 +81,12 @@ def search(
 ) -> Iterator[Match]:
     if not query:
         raise ValueError("Query cannot be empty")
+    if len(query) > MAX_QUERY_CHARS:
+        raise ValueError("Query is too long")
+    if regex and UNSAFE_REGEX.search(query):
+        raise ValueError("Potentially unsafe regular expression")
+    if since is not None and until is not None and since > until:
+        raise ValueError("Start time must not exceed end time")
     if limit is not None and limit < 1:
         raise ValueError("Limit must be >= 1")
     flags = re.IGNORECASE if ignore_case else 0
@@ -84,7 +96,13 @@ def search(
         opener = gzip.open if path.suffix.lower() == ".gz" else open
         try:
             with opener(path, "rt", encoding="utf-8", errors="replace") as stream:
-                for line_number, line in enumerate(stream, start=1):
+                expanded = 0
+                for line_number, line in enumerate(iter(lambda: stream.readline(MAX_LINE_CHARS + 2), ""), start=1):
+                    expanded += len(line.encode("utf-8", errors="replace"))
+                    if path.suffix.lower() == ".gz" and expanded > MAX_GZIP_BYTES:
+                        raise ValueError(f"Decompressed file exceeds safety limit: {path}")
+                    if len(line) > MAX_LINE_CHARS:
+                        raise ValueError(f"Line too long in {path} at line {line_number}")
                     if not pattern.search(line):
                         continue
                     timestamp = parse_timestamp(line)
