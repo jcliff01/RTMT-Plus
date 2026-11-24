@@ -2,13 +2,18 @@
 
 Advanced search, correlation, and troubleshooting for Cisco Unified Communications Manager (CUCM) RTMT logs.
 
-> **Status:** Planning / initial development. Not affiliated with or endorsed by Cisco.
+> **Status:** Early development. Local log search is available through the Python CLI and an optional desktop UI. Not affiliated with or endorsed by Cisco.
+
+## Get started
+
+- [Install and search logs](docs/GETTING_STARTED.md) with Python 3.10 or newer.
+- [Download a CI build or package the Windows EXE](docs/WINDOWS_BUILD.md).
 
 ## Vision
 
 RTMT Plus is a standalone, local-first desktop companion to Cisco Real-Time Monitoring Tool (RTMT). It helps engineers search large log collections, correlate events across CUCM nodes, and reconstruct troubleshooting timelines without modifying Cisco's proprietary software.
 
-## Initial capabilities (planned)
+## Planned capabilities
 
 - Import downloaded RTMT / CUCM trace and log files.
 - Full-text and regular-expression search across multiple files.
