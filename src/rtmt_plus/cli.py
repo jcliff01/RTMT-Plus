@@ -16,7 +16,7 @@ def safe_csv(value: object) -> object:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Search local CUCM/RTMT log files")
+    parser = argparse.ArgumentParser(prog="rtmt-plus", description="Search local CUCM/RTMT log files")
     parser.add_argument("paths", nargs="+", help="Files or folders to search")
     parser.add_argument("-q", "--query", required=True, help="Text or regular expression")
     parser.add_argument("--regex", action="store_true", help="Interpret query as regex")

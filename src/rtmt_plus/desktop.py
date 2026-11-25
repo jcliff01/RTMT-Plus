@@ -11,7 +11,7 @@ def main() -> int:
             QLabel, QLineEdit, QMainWindow, QMessageBox, QPushButton,
             QPlainTextEdit, QVBoxLayout, QWidget)
     except ImportError:
-        print("Desktop dependencies missing. Install: pip install -e '.[desktop]'", file=sys.stderr)
+        print('The desktop window needs PySide6. Install it with: python -m pip install "PySide6>=6.6"', file=sys.stderr)
         return 2
 
     class Window(QMainWindow):
