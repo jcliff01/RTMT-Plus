@@ -4,6 +4,8 @@ RTMT Plus searches the log and trace files you download from Cisco Unified Commu
 
 It works on your computer only: it reads your files, never changes them, and sends nothing anywhere.
 
+![The RTMT Plus window showing every line that mentions a 503 error in the sample logs](docs/screenshot.png)
+
 > **Status: early version.** Search works today. Correlating calls across servers and building timelines are planned (see [Roadmap](#roadmap)). RTMT Plus is not made or endorsed by Cisco.
 
 ## Windows: download the program
@@ -53,6 +55,10 @@ This puts RTMT Plus in a folder of its own called `rtmt-plus` in your home folde
 | Command line | `& $HOME\rtmt-plus\Scripts\rtmt-plus C:\logs -q "ERROR"` | `~/rtmt-plus/bin/rtmt-plus ~/logs -q "ERROR"` |
 
 Replace `C:\logs` or `~/logs` with your log folder.
+
+## Try it with the sample logs
+
+No logs at hand? The folder [`examples/sample-logs`](examples/sample-logs) has two made-up CUCM-style log files (every number, address and call ID is invented). Download it with the rest of the repository (green **Code** button → **Download ZIP**), choose that folder with **Browse folder**, and search for `503`, `busy` or a call ID. The picture above is that search.
 
 ## Searching from the command line
 
