@@ -1,0 +1,163 @@
+2026-11-17 09:00:05.068 cucm-pub INFO  SIPTcp - INVITE sip:+13125550199@198.51.100.10 SIP/2.0 Call-ID: de383784-ed03@192.0.2.12 From: <sip:2185@192.0.2.11>
+2026-11-17 09:00:05.236 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: de383784-ed03@192.0.2.12
+2026-11-17 09:00:05.846 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: de383784-ed03@192.0.2.12
+2026-11-17 09:00:05.894 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: de383784-ed03@192.0.2.12
+2026-11-17 09:00:06.207 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: de383784-ed03@192.0.2.12
+2026-11-17 09:00:08.986 cucm-pub INFO  SIPTcp - INVITE sip:+13125550112@198.51.100.10 SIP/2.0 Call-ID: cd085b71-93b0@192.0.2.12 From: <sip:2146@192.0.2.11>
+2026-11-17 09:00:09.130 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: cd085b71-93b0@192.0.2.12
+2026-11-17 09:00:09.399 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: cd085b71-93b0@192.0.2.12
+2026-11-17 09:00:10.092 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: cd085b71-93b0@192.0.2.12
+2026-11-17 09:00:10.543 cucm-pub INFO  SIPTcp - BYE sip:2146@192.0.2.11 SIP/2.0 Call-ID: cd085b71-93b0@192.0.2.12
+2026-11-17 09:00:11.345 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: cd085b71-93b0@192.0.2.12
+2026-11-17 09:00:30.603 cucm-pub INFO  SIPTcp - INVITE sip:+13125550174@198.51.100.10 SIP/2.0 Call-ID: 4d90f551-8c65@192.0.2.12 From: <sip:2153@192.0.2.11>
+2026-11-17 09:00:30.628 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 4d90f551-8c65@192.0.2.12
+2026-11-17 09:00:31.236 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 4d90f551-8c65@192.0.2.12
+2026-11-17 09:00:31.888 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 4d90f551-8c65@192.0.2.12
+2026-11-17 09:00:32.029 cucm-pub INFO  SIPTcp - BYE sip:2153@192.0.2.11 SIP/2.0 Call-ID: 4d90f551-8c65@192.0.2.12
+2026-11-17 09:00:32.095 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 4d90f551-8c65@192.0.2.12
+2026-11-17 09:00:41.742 cucm-pub INFO  SIPTcp - INVITE sip:+13125550121@198.51.100.10 SIP/2.0 Call-ID: 526c5cc5-f2fb@192.0.2.12 From: <sip:2156@192.0.2.11>
+2026-11-17 09:00:42.091 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 526c5cc5-f2fb@192.0.2.12
+2026-11-17 09:00:42.319 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: 526c5cc5-f2fb@192.0.2.12
+2026-11-17 09:00:42.906 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: 526c5cc5-f2fb@192.0.2.12
+2026-11-17 09:00:43.372 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: 526c5cc5-f2fb@192.0.2.12
+2026-11-17 09:00:43.699 cucm-pub INFO  SIPTcp - INVITE sip:+13125550124@198.51.100.10 SIP/2.0 Call-ID: 454608a5-399b@192.0.2.11 From: <sip:2167@192.0.2.11>
+2026-11-17 09:00:44.530 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 454608a5-399b@192.0.2.11
+2026-11-17 09:00:45.123 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: 454608a5-399b@192.0.2.11
+2026-11-17 09:00:45.315 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: 454608a5-399b@192.0.2.11
+2026-11-17 09:00:46.204 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: 454608a5-399b@192.0.2.11
+2026-11-17 09:00:51.881 cucm-pub INFO  SIPTcp - INVITE sip:+13125550195@198.51.100.10 SIP/2.0 Call-ID: fca65f8e-8298@192.0.2.12 From: <sip:2104@192.0.2.11>
+2026-11-17 09:00:52.742 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: fca65f8e-8298@192.0.2.12
+2026-11-17 09:00:53.512 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: fca65f8e-8298@192.0.2.12
+2026-11-17 09:00:54.048 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: fca65f8e-8298@192.0.2.12
+2026-11-17 09:00:54.348 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: fca65f8e-8298@192.0.2.12
+2026-11-17 09:00:54.475 cucm-pub INFO  SIPTcp - INVITE sip:+13125550136@198.51.100.10 SIP/2.0 Call-ID: 8b3a7a4a-5750@192.0.2.11 From: <sip:2175@192.0.2.11>
+2026-11-17 09:00:55.309 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 8b3a7a4a-5750@192.0.2.11
+2026-11-17 09:00:55.349 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 8b3a7a4a-5750@192.0.2.11
+2026-11-17 09:00:56.176 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 8b3a7a4a-5750@192.0.2.11
+2026-11-17 09:00:56.891 cucm-pub INFO  SIPTcp - BYE sip:2175@192.0.2.11 SIP/2.0 Call-ID: 8b3a7a4a-5750@192.0.2.11
+2026-11-17 09:00:57.420 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 8b3a7a4a-5750@192.0.2.11
+2026-11-17 09:00:58.188 cucm-pub INFO  SIPTcp - INVITE sip:+13125550161@198.51.100.10 SIP/2.0 Call-ID: ec81bf90-32ce@192.0.2.12 From: <sip:2101@192.0.2.11>
+2026-11-17 09:00:58.316 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: ec81bf90-32ce@192.0.2.12
+2026-11-17 09:00:58.628 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: ec81bf90-32ce@192.0.2.12
+2026-11-17 09:00:58.877 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: ec81bf90-32ce@192.0.2.12
+2026-11-17 09:00:59.560 cucm-pub INFO  SIPTcp - BYE sip:2101@192.0.2.11 SIP/2.0 Call-ID: ec81bf90-32ce@192.0.2.12
+2026-11-17 09:00:59.585 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: ec81bf90-32ce@192.0.2.12
+2026-11-17 09:00:59.939 cucm-pub INFO  SIPTcp - INVITE sip:+13125550114@198.51.100.10 SIP/2.0 Call-ID: 86640cb0-8978@192.0.2.12 From: <sip:2178@192.0.2.11>
+2026-11-17 09:01:00.072 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 86640cb0-8978@192.0.2.12
+2026-11-17 09:01:00.959 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 86640cb0-8978@192.0.2.12
+2026-11-17 09:01:01.517 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 86640cb0-8978@192.0.2.12
+2026-11-17 09:01:02.010 cucm-pub INFO  SIPTcp - BYE sip:2178@192.0.2.11 SIP/2.0 Call-ID: 86640cb0-8978@192.0.2.12
+2026-11-17 09:01:02.846 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 86640cb0-8978@192.0.2.12
+2026-11-17 09:01:03.398 cucm-pub INFO  SIPTcp - INVITE sip:+13125550115@198.51.100.10 SIP/2.0 Call-ID: c846756a-0fb5@192.0.2.12 From: <sip:2125@192.0.2.11>
+2026-11-17 09:01:04.239 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: c846756a-0fb5@192.0.2.12
+2026-11-17 09:01:04.489 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: c846756a-0fb5@192.0.2.12
+2026-11-17 09:01:05.304 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: c846756a-0fb5@192.0.2.12
+2026-11-17 09:01:05.589 cucm-pub INFO  SIPTcp - BYE sip:2125@192.0.2.11 SIP/2.0 Call-ID: c846756a-0fb5@192.0.2.12
+2026-11-17 09:01:06.419 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: c846756a-0fb5@192.0.2.12
+2026-11-17 09:01:09.979 cucm-pub INFO  SIPTcp - INVITE sip:+13125550141@198.51.100.10 SIP/2.0 Call-ID: 86faea97-8509@192.0.2.12 From: <sip:2160@192.0.2.11>
+2026-11-17 09:01:10.823 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 86faea97-8509@192.0.2.12
+2026-11-17 09:01:10.884 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 86faea97-8509@192.0.2.12
+2026-11-17 09:01:11.682 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 86faea97-8509@192.0.2.12
+2026-11-17 09:01:11.816 cucm-pub INFO  SIPTcp - BYE sip:2160@192.0.2.11 SIP/2.0 Call-ID: 86faea97-8509@192.0.2.12
+2026-11-17 09:01:11.868 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 86faea97-8509@192.0.2.12
+2026-11-17 09:01:15.862 cucm-pub INFO  SIPTcp - INVITE sip:+13125550147@198.51.100.10 SIP/2.0 Call-ID: b9191d5c-6157@192.0.2.11 From: <sip:2105@192.0.2.11>
+2026-11-17 09:01:16.485 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: b9191d5c-6157@192.0.2.11
+2026-11-17 09:01:17.044 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: b9191d5c-6157@192.0.2.11
+2026-11-17 09:01:17.438 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: b9191d5c-6157@192.0.2.11
+2026-11-17 09:01:18.094 cucm-pub INFO  SIPTcp - BYE sip:2105@192.0.2.11 SIP/2.0 Call-ID: b9191d5c-6157@192.0.2.11
+2026-11-17 09:01:18.919 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: b9191d5c-6157@192.0.2.11
+2026-11-17 09:01:19.432 cucm-pub INFO  SIPTcp - INVITE sip:+13125550180@198.51.100.10 SIP/2.0 Call-ID: 0b1ed724-9f78@192.0.2.12 From: <sip:2147@192.0.2.11>
+2026-11-17 09:01:20.215 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 0b1ed724-9f78@192.0.2.12
+2026-11-17 09:01:20.650 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: 0b1ed724-9f78@192.0.2.12
+2026-11-17 09:01:21.365 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: 0b1ed724-9f78@192.0.2.12
+2026-11-17 09:01:21.798 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: 0b1ed724-9f78@192.0.2.12
+2026-11-17 09:01:22.514 cucm-pub INFO  SIPTcp - INVITE sip:+13125550134@198.51.100.10 SIP/2.0 Call-ID: 75f99ac4-0496@192.0.2.11 From: <sip:2168@192.0.2.11>
+2026-11-17 09:01:23.123 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 75f99ac4-0496@192.0.2.11
+2026-11-17 09:01:23.563 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 75f99ac4-0496@192.0.2.11
+2026-11-17 09:01:23.797 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 75f99ac4-0496@192.0.2.11
+2026-11-17 09:01:24.238 cucm-pub INFO  SIPTcp - BYE sip:2168@192.0.2.11 SIP/2.0 Call-ID: 75f99ac4-0496@192.0.2.11
+2026-11-17 09:01:24.376 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 75f99ac4-0496@192.0.2.11
+2026-11-17 09:01:28.716 cucm-pub INFO  SIPTcp - INVITE sip:+13125550140@198.51.100.10 SIP/2.0 Call-ID: e328f187-87b9@192.0.2.12 From: <sip:2193@192.0.2.11>
+2026-11-17 09:01:29.265 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: e328f187-87b9@192.0.2.12
+2026-11-17 09:01:29.871 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: e328f187-87b9@192.0.2.12
+2026-11-17 09:01:30.609 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: e328f187-87b9@192.0.2.12
+2026-11-17 09:01:30.619 cucm-pub INFO  SIPTcp - BYE sip:2193@192.0.2.11 SIP/2.0 Call-ID: e328f187-87b9@192.0.2.12
+2026-11-17 09:01:31.108 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: e328f187-87b9@192.0.2.12
+2026-11-17 09:01:31.690 cucm-pub INFO  SIPTcp - INVITE sip:+13125550111@198.51.100.10 SIP/2.0 Call-ID: 24bd9e93-3c68@192.0.2.12 From: <sip:2167@192.0.2.11>
+2026-11-17 09:01:31.796 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 24bd9e93-3c68@192.0.2.12
+2026-11-17 09:01:32.185 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 24bd9e93-3c68@192.0.2.12
+2026-11-17 09:01:32.373 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 24bd9e93-3c68@192.0.2.12
+2026-11-17 09:01:33.217 cucm-pub INFO  SIPTcp - BYE sip:2167@192.0.2.11 SIP/2.0 Call-ID: 24bd9e93-3c68@192.0.2.12
+2026-11-17 09:01:33.246 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 24bd9e93-3c68@192.0.2.12
+2026-11-17 09:01:33.744 cucm-pub INFO  SIPTcp - INVITE sip:+13125550186@198.51.100.10 SIP/2.0 Call-ID: 576b7da1-d76e@192.0.2.11 From: <sip:2114@192.0.2.11>
+2026-11-17 09:01:34.605 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 576b7da1-d76e@192.0.2.11
+2026-11-17 09:01:34.901 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 576b7da1-d76e@192.0.2.11
+2026-11-17 09:01:35.498 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 576b7da1-d76e@192.0.2.11
+2026-11-17 09:01:35.809 cucm-pub INFO  SIPTcp - BYE sip:2114@192.0.2.11 SIP/2.0 Call-ID: 576b7da1-d76e@192.0.2.11
+2026-11-17 09:01:36.631 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 576b7da1-d76e@192.0.2.11
+2026-11-17 09:01:36.738 cucm-pub INFO  SIPTcp - INVITE sip:+13125550195@198.51.100.10 SIP/2.0 Call-ID: 16baa014-0948@192.0.2.11 From: <sip:2170@192.0.2.11>
+2026-11-17 09:01:37.309 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 16baa014-0948@192.0.2.11
+2026-11-17 09:01:37.646 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 16baa014-0948@192.0.2.11
+2026-11-17 09:01:38.541 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 16baa014-0948@192.0.2.11
+2026-11-17 09:01:39.123 cucm-pub INFO  SIPTcp - BYE sip:2170@192.0.2.11 SIP/2.0 Call-ID: 16baa014-0948@192.0.2.11
+2026-11-17 09:01:39.312 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 16baa014-0948@192.0.2.11
+2026-11-17 09:01:39.782 cucm-pub INFO  SIPTcp - INVITE sip:+13125550131@198.51.100.10 SIP/2.0 Call-ID: d3fbb249-13cc@192.0.2.11 From: <sip:2182@192.0.2.11>
+2026-11-17 09:01:40.417 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: d3fbb249-13cc@192.0.2.11
+2026-11-17 09:01:40.825 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: d3fbb249-13cc@192.0.2.11
+2026-11-17 09:01:41.088 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: d3fbb249-13cc@192.0.2.11
+2026-11-17 09:01:41.469 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: d3fbb249-13cc@192.0.2.11
+2026-11-17 09:01:47.579 cucm-pub INFO  SIPTcp - INVITE sip:+13125550163@198.51.100.10 SIP/2.0 Call-ID: a4989173-66ab@192.0.2.11 From: <sip:2112@192.0.2.11>
+2026-11-17 09:01:48.079 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: a4989173-66ab@192.0.2.11
+2026-11-17 09:01:48.613 cucm-pub WARN  SIPTcp - SIP/2.0 486 Busy Here Call-ID: a4989173-66ab@192.0.2.11
+2026-11-17 09:01:49.071 cucm-pub INFO  CcmCallState - disconnect cause=17 (user busy) Call-ID: a4989173-66ab@192.0.2.11
+2026-11-17 09:01:49.279 cucm-pub INFO  SIPTcp - INVITE sip:+13125550196@198.51.100.10 SIP/2.0 Call-ID: 9622c7ea-b80a@192.0.2.11 From: <sip:2134@192.0.2.11>
+2026-11-17 09:01:49.434 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 9622c7ea-b80a@192.0.2.11
+2026-11-17 09:01:49.761 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 9622c7ea-b80a@192.0.2.11
+2026-11-17 09:01:50.003 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 9622c7ea-b80a@192.0.2.11
+2026-11-17 09:01:50.879 cucm-pub INFO  SIPTcp - BYE sip:2134@192.0.2.11 SIP/2.0 Call-ID: 9622c7ea-b80a@192.0.2.11
+2026-11-17 09:01:51.591 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 9622c7ea-b80a@192.0.2.11
+2026-11-17 09:01:53.193 cucm-pub INFO  SIPTcp - INVITE sip:+13125550172@198.51.100.10 SIP/2.0 Call-ID: 44a1c8d7-7abf@192.0.2.12 From: <sip:2122@192.0.2.11>
+2026-11-17 09:01:53.442 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 44a1c8d7-7abf@192.0.2.12
+2026-11-17 09:01:54.239 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 44a1c8d7-7abf@192.0.2.12
+2026-11-17 09:01:55.128 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 44a1c8d7-7abf@192.0.2.12
+2026-11-17 09:01:55.280 cucm-pub INFO  SIPTcp - BYE sip:2122@192.0.2.11 SIP/2.0 Call-ID: 44a1c8d7-7abf@192.0.2.12
+2026-11-17 09:01:55.713 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 44a1c8d7-7abf@192.0.2.12
+2026-11-17 09:01:56.572 cucm-pub INFO  SIPTcp - INVITE sip:+13125550174@198.51.100.10 SIP/2.0 Call-ID: fdc0754a-b292@192.0.2.12 From: <sip:2159@192.0.2.11>
+2026-11-17 09:01:57.418 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: fdc0754a-b292@192.0.2.12
+2026-11-17 09:01:57.451 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: fdc0754a-b292@192.0.2.12
+2026-11-17 09:01:57.948 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: fdc0754a-b292@192.0.2.12
+2026-11-17 09:01:58.691 cucm-pub INFO  SIPTcp - BYE sip:2159@192.0.2.11 SIP/2.0 Call-ID: fdc0754a-b292@192.0.2.12
+2026-11-17 09:01:58.770 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: fdc0754a-b292@192.0.2.12
+2026-11-17 09:01:59.015 cucm-pub INFO  SIPTcp - INVITE sip:+13125550129@198.51.100.10 SIP/2.0 Call-ID: db4d584b-f292@192.0.2.12 From: <sip:2159@192.0.2.11>
+2026-11-17 09:01:59.683 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: db4d584b-f292@192.0.2.12
+2026-11-17 09:02:00.379 cucm-pub ERROR SIPTcp - SIP/2.0 503 Service Unavailable Call-ID: db4d584b-f292@192.0.2.12
+2026-11-17 09:02:00.454 cucm-pub WARN  RouteListControl - route next member after 503 Call-ID: db4d584b-f292@192.0.2.12
+2026-11-17 09:02:00.681 cucm-pub INFO  CcmCallState - disconnect cause=41 (temporary failure) Call-ID: db4d584b-f292@192.0.2.12
+2026-11-17 09:02:00.826 cucm-pub INFO  SIPTcp - INVITE sip:+13125550133@198.51.100.10 SIP/2.0 Call-ID: da97fa80-4111@192.0.2.11 From: <sip:2199@192.0.2.11>
+2026-11-17 09:02:01.022 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: da97fa80-4111@192.0.2.11
+2026-11-17 09:02:01.718 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: da97fa80-4111@192.0.2.11
+2026-11-17 09:02:02.602 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: da97fa80-4111@192.0.2.11
+2026-11-17 09:02:02.644 cucm-pub INFO  SIPTcp - BYE sip:2199@192.0.2.11 SIP/2.0 Call-ID: da97fa80-4111@192.0.2.11
+2026-11-17 09:02:02.910 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: da97fa80-4111@192.0.2.11
+2026-11-17 09:02:04.857 cucm-pub INFO  SIPTcp - INVITE sip:+13125550157@198.51.100.10 SIP/2.0 Call-ID: d57c6140-e9eb@192.0.2.12 From: <sip:2145@192.0.2.11>
+2026-11-17 09:02:05.613 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: d57c6140-e9eb@192.0.2.12
+2026-11-17 09:02:05.625 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: d57c6140-e9eb@192.0.2.12
+2026-11-17 09:02:05.660 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: d57c6140-e9eb@192.0.2.12
+2026-11-17 09:02:06.007 cucm-pub INFO  SIPTcp - BYE sip:2145@192.0.2.11 SIP/2.0 Call-ID: d57c6140-e9eb@192.0.2.12
+2026-11-17 09:02:06.351 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: d57c6140-e9eb@192.0.2.12
+2026-11-17 09:02:06.955 cucm-pub INFO  SIPTcp - INVITE sip:+13125550182@198.51.100.10 SIP/2.0 Call-ID: 6fac33a8-6132@192.0.2.12 From: <sip:2126@192.0.2.11>
+2026-11-17 09:02:07.720 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 6fac33a8-6132@192.0.2.12
+2026-11-17 09:02:08.125 cucm-pub WARN  SIPTcp - SIP/2.0 486 Busy Here Call-ID: 6fac33a8-6132@192.0.2.12
+2026-11-17 09:02:08.258 cucm-pub INFO  CcmCallState - disconnect cause=17 (user busy) Call-ID: 6fac33a8-6132@192.0.2.12
+2026-11-17 09:02:14.416 cucm-pub INFO  SIPTcp - INVITE sip:+13125550163@198.51.100.10 SIP/2.0 Call-ID: 1b6f390f-c112@192.0.2.12 From: <sip:2185@192.0.2.11>
+2026-11-17 09:02:14.781 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: 1b6f390f-c112@192.0.2.12
+2026-11-17 09:02:15.087 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: 1b6f390f-c112@192.0.2.12
+2026-11-17 09:02:15.786 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: 1b6f390f-c112@192.0.2.12
+2026-11-17 09:02:16.536 cucm-pub INFO  SIPTcp - BYE sip:2185@192.0.2.11 SIP/2.0 Call-ID: 1b6f390f-c112@192.0.2.12
+2026-11-17 09:02:17.120 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: 1b6f390f-c112@192.0.2.12
+2026-11-17 09:02:17.590 cucm-pub INFO  SIPTcp - INVITE sip:+13125550183@198.51.100.10 SIP/2.0 Call-ID: be04f891-2e96@192.0.2.11 From: <sip:2147@192.0.2.11>
+2026-11-17 09:02:17.721 cucm-pub INFO  SIPTcp - SIP/2.0 100 Trying Call-ID: be04f891-2e96@192.0.2.11
+2026-11-17 09:02:18.299 cucm-pub INFO  SIPTcp - SIP/2.0 180 Ringing Call-ID: be04f891-2e96@192.0.2.11
+2026-11-17 09:02:18.448 cucm-pub INFO  SIPTcp - SIP/2.0 200 OK Call-ID: be04f891-2e96@192.0.2.11
+2026-11-17 09:02:18.792 cucm-pub INFO  SIPTcp - BYE sip:2147@192.0.2.11 SIP/2.0 Call-ID: be04f891-2e96@192.0.2.11
+2026-11-17 09:02:19.457 cucm-pub INFO  CcmCallState - disconnect cause=16 (normal call clearing) Call-ID: be04f891-2e96@192.0.2.11

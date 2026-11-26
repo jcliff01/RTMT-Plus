@@ -1,5 +1,6 @@
 """Optional PySide6 desktop search interface."""
 from __future__ import annotations
+import os
 import sys
 
 from .search import search
@@ -7,11 +8,12 @@ from .search import search
 def main() -> int:
     try:
         from PySide6.QtCore import Qt
+        from PySide6.QtGui import QFontDatabase
         from PySide6.QtWidgets import (QApplication, QFileDialog, QHBoxLayout,
             QLabel, QLineEdit, QMainWindow, QMessageBox, QPushButton,
             QPlainTextEdit, QVBoxLayout, QWidget)
     except ImportError:
-        print("Desktop dependencies missing. Install: pip install -e '.[desktop]'", file=sys.stderr)
+        print('The desktop window needs PySide6. Install it with: python -m pip install "PySide6>=6.6"', file=sys.stderr)
         return 2
 
     class Window(QMainWindow):
@@ -40,6 +42,9 @@ def main() -> int:
             layout.addLayout(row)
             self.results = QPlainTextEdit()
             self.results.setReadOnly(True)
+            # One match per line, in a fixed-width font, so columns line up and lines don't wrap.
+            self.results.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
+            self.results.setFont(QFontDatabase.systemFont(QFontDatabase.SystemFont.FixedFont))
             layout.addWidget(self.results, 1)
             self.setCentralWidget(center)
 
@@ -57,7 +62,7 @@ def main() -> int:
             try:
                 matches = list(search([self.folder], self.query.text(), limit=1000))
                 self.results.setPlainText("\n".join(
-                    f"{m.path}:{m.line} [{m.timestamp or 'no timestamp'}] {m.text}"
+                    f"{os.path.relpath(m.path, self.folder)}:{m.line}  {m.text}"
                     for m in matches
                 ) or "No matches found.")
                 self.statusBar().showMessage(f"{len(matches)} matches (max 1000)")

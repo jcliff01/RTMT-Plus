@@ -2,15 +2,11 @@
 
 The Windows desktop application is packaged using PyInstaller on a GitHub-hosted Windows runner.
 
-## Download a CI build
+## Download
 
-1. Open the repository's **Actions** tab.
-2. Choose **Build Windows EXE**.
-3. Choose the latest successful run (or select **Run workflow**).
-4. Under **Artifacts**, download **RTMT-Plus-Windows-x64**.
-5. Unzip it, then launch **RTMT-Plus.exe**.
+Merges to `main` publish the program as the [latest release](https://github.com/jcliff01/RTMT-Plus/releases/latest): download **RTMT-Plus.exe** there, no GitHub account needed. Every build is also kept for 30 days as an artifact named **RTMT-Plus-Windows-x64** on the workflow's run page under **Actions → Build Windows EXE** (downloading artifacts needs a GitHub sign-in).
 
-GitHub requires you to be signed in to download workflow artifacts. Artifacts are retained for 30 days. This build is not code-signed; Windows SmartScreen may warn about an unknown publisher. Only run builds you trust.
+The program isn't code-signed, so Windows SmartScreen may warn about an unknown publisher: click **More info**, then **Run anyway**. Only run builds from this repository.
 
 ## Build locally on Windows
 

@@ -113,7 +113,7 @@ def search(
                     identifier = parse_call_id(line)
                     if call_id is not None and identifier != call_id:
                         continue
-                    yield Match(str(path), line_number, timestamp.isoformat(sep=" ") if timestamp else None, identifier, line.rstrip("\r\n"))
+                    yield Match(str(path), line_number, timestamp.isoformat(sep=" ", timespec="milliseconds" if timestamp.microsecond else "seconds") if timestamp else None, identifier, line.rstrip("\r\n"))
                     count += 1
                     if limit is not None and count >= limit:
                         return
