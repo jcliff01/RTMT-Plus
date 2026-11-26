@@ -6,7 +6,7 @@ Advanced search, correlation, and troubleshooting for Cisco Unified Communicatio
 
 ## Get started
 
-- [Install and search logs](docs/GETTING_STARTED.md) with Python 3.10 or newer.
+- [Step-by-step setup](docs/GETTING_STARTED.md): Java 8 for RTMT, Python 3.10+ for RTMT Plus.
 - [Download a CI build or package the Windows EXE](docs/WINDOWS_BUILD.md).
 - [Use it with Cisco RTMT 15](docs/RTMT_INTEGRATION.md): search RTMT's trace folder, decode cause codes, launch RTMT.
 
