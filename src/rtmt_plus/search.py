@@ -14,6 +14,8 @@ TIMESTAMP = re.compile(
     r"(?P<ts>\d{4}[-/]\d{2}[-/]\d{2}[ T]\d{2}:\d{2}:\d{2}(?:[.,]\d{1,6})?)"
 )
 CALL_ID = re.compile(r"(?i)\b(?:call[-_ ]?id|globalcallid|callidentifier)\s*[:=]\s*([\w.@-]+)")
+# Q.850-style disconnect causes, e.g. "Reason: Q.850;cause=16", "DisconnectCause = 31".
+CAUSE = re.compile(r"(?i)(?:\bq\.850;\s*|\b(?:disconnect)?)cause(?:[_ ]?(?:code|value))?\s*[:=]\s*(\d{1,3})\b")
 SUPPORTED_SUFFIXES = (".log", ".txt", ".trace", ".out", ".gz")
 MAX_LINE_CHARS = 1_000_000
 MAX_QUERY_CHARS = 512
@@ -29,6 +31,7 @@ class Match:
     timestamp: str | None
     call_id: str | None
     text: str
+    cause: int | None = None
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -46,6 +49,10 @@ def parse_timestamp(line: str) -> datetime | None:
 def parse_call_id(line: str) -> str | None:
     match = CALL_ID.search(line)
     return match.group(1) if match else None
+
+def parse_cause(line: str) -> int | None:
+    match = CAUSE.search(line)
+    return int(match.group(1)) if match else None
 
 def iter_files(paths: list[str | Path]) -> Iterator[Path]:
     """Yield candidate files in deterministic order; skip symlinks."""
@@ -113,7 +120,8 @@ def search(
                     identifier = parse_call_id(line)
                     if call_id is not None and identifier != call_id:
                         continue
-                    yield Match(str(path), line_number, timestamp.isoformat(sep=" ") if timestamp else None, identifier, line.rstrip("\r\n"))
+                    yield Match(str(path), line_number, timestamp.isoformat(sep=" ") if timestamp else None,
+                                identifier, line.rstrip("\r\n"), parse_cause(line))
                     count += 1
                     if limit is not None and count >= limit:
                         return

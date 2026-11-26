@@ -8,6 +8,7 @@ Advanced search, correlation, and troubleshooting for Cisco Unified Communicatio
 
 - [Install and search logs](docs/GETTING_STARTED.md) with Python 3.10 or newer.
 - [Download a CI build or package the Windows EXE](docs/WINDOWS_BUILD.md).
+- [Use it with Cisco RTMT 15](docs/RTMT_INTEGRATION.md): search RTMT's trace folder, decode cause codes, launch RTMT.
 
 ## Vision
 
@@ -19,7 +20,7 @@ RTMT Plus is a standalone, local-first desktop companion to Cisco Real-Time Moni
 - Full-text and regular-expression search across multiple files.
 - Filter by timestamp, severity, host, device, IP address, extension, and call identifiers where available.
 - Normalize timestamps and correlate events across cluster nodes.
-- Trace SIP signaling and call disconnect causes.
+- Trace SIP signaling and call disconnect causes (cause codes decoded using your local RTMT install).
 - Export filtered results and incident timelines.
 - Support large log collections with incremental indexing.
 
@@ -63,6 +64,7 @@ Optional supported read-only Cisco APIs (future)
 
 - Local-first processing; no default cloud upload.
 - Do not commit production traces, credentials, customer data, or call-detail records.
+- Do not commit Cisco RTMT files; RTMT Plus reads them from your local install at runtime.
 - Redact sensitive identifiers in sample logs and reports.
 - Future API integrations must use least-privilege credentials and secure storage.
 - Log timestamps, formats, and available fields vary by CUCM release; parsers must be validated against representative sanitized samples.

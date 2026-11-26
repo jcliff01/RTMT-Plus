@@ -24,6 +24,15 @@ rtmt-plus ./logs -q "Call-ID" --since 2026-11-17T09:00:00 --format jsonl
 rtmt-plus ./logs -q "disconnect|timeout" --regex --limit 500
 ```
 
+## With Cisco RTMT
+
+```bash
+rtmt-plus --rtmt-home "C:\Program Files\Cisco\RTMT15" --rtmt-info
+rtmt-plus --rtmt-home "C:\Program Files\Cisco\RTMT15" -q "cause="
+```
+
+See [RTMT_INTEGRATION.md](RTMT_INTEGRATION.md).
+
 ## Desktop
 
 ```bash
