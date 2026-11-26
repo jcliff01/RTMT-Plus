@@ -16,3 +16,16 @@ build/
 .idea/
 .vscode/
 .DS_Store
+
+# Cisco RTMT is proprietary and must never be committed. Point RTMT Plus at
+# your local install with --rtmt-home or RTMT_HOME instead.
+*.jar
+JRtmt*/
+CiscoRTMT*/
+rtmt[0-9]*/
+CiscoRtmtLicense.txt
+*.zip
+# RTMT client certificate keystores
+*.p12
+*.pfx
+*.passphrase
